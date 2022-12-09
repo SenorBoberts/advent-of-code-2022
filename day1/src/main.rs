@@ -8,7 +8,7 @@ fn main(){
 }
 
 fn part2(){
-    let f = File::open("input.txt").expect("File open failed");
+    let f = File::open("input").expect("File open failed");
     let f_reader = BufReader::new(f);
 
     let mut max = (0i32, 0i32, 0i32);
@@ -38,7 +38,7 @@ fn part2(){
 }
 
 fn part1() {
-    let f = File::open("input.txt").expect("File open failed");
+    let f = File::open("input").expect("File open failed");
     let f_reader = BufReader::new(f);
 
     let mut max : i32 = 0;

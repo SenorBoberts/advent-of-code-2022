@@ -8,7 +8,7 @@ fn main() {
 }
 
 fn file_processor(fun: &dyn Fn(&str, &str, &str, &str) -> bool) -> i32{
-    let f = File::open("input.txt").expect("File cannot be opened");
+    let f = File::open("input").expect("File cannot be opened");
     let f_reader = BufReader::new(f);
 
     let re = Regex::new(r"^(\d{1,})-(\d{1,}),(\d{1,})-(\d{1,})$").unwrap();

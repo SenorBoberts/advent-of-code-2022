@@ -3,7 +3,7 @@ use std::io::{BufRead, BufReader};
 use std::collections::HashSet;
 
 fn main() {
-    //part1();
+    part1();
     part2();
 }
 
@@ -18,7 +18,7 @@ fn c_to_p(c: char) -> u32{
 }
 
 fn part1(){
-    let f = File::open("input.txt").expect("File cannot be opened");
+    let f = File::open("input").expect("File cannot be opened");
     let f_reader = BufReader::new(f);
 
     let mut score = 0;
@@ -36,7 +36,7 @@ fn part1(){
 }
 
 fn part2(){
-    let f = File::open("input.txt").expect("File cannot be opened");
+    let f = File::open("input").expect("File cannot be opened");
     let f_reader = BufReader::new(f);
 
     let mut score = 0;
